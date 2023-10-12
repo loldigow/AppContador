@@ -1,0 +1,11 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/AppContador/AppFinanceiro/bin/Debug/netstandard2.0
+/AppContador/AppFinanceiro/obj
+/AppContador/AppFinanceiro.Android/bin/Debug
+/AppContador/AppFinanceiro.Android/obj
+/AppContador/AppFinanceiro/bin/Release/netstandard2.0
+/AppContador/AppFinanceiro.Android/bin/Release
