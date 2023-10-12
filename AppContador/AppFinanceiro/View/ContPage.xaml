@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:AppFinanceiro.Controls" xmlns:viewmodel="clr-namespace:AppFinanceiro.ViewModel"
+             x:Class="AppFinanceiro.View.ContPage">
+    <ContentPage.BindingContext>
+        <viewmodel:ContViewModel></viewmodel:ContViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Quantidade" HorizontalOptions="Center" FontSize="20" Margin="25"></Label>
+            <Label HorizontalOptions="Center" 
+                   FontSize="48"
+                   TextColor="{Binding CorTexto}"
+                   Text="{Binding Contador}"></Label>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="50" Spacing="30">
+                <controls:ButtonView FontAwesome="&#x2b;" Click="{Binding AdicioneCommand}"></controls:ButtonView>
+                <controls:ButtonView FontAwesome="&#xf068;" Click="{Binding RemovaCommand}"></controls:ButtonView>
+            </StackLayout>
+            <controls:ButtonView Texto="Reset" Click="{Binding ResetCommand}"></controls:ButtonView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
